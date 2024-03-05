@@ -1,0 +1,82 @@
+#app {
+  width: 100%;
+  height: 100%;
+
+  .vben-basic-drawer__detail {
+    z-index: 500;
+  }
+}
+
+// =================================
+// ==============scrollbar==========
+// =================================
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+}
+
+// ::-webkit-scrollbar-track {
+//   background: transparent;
+// }
+
+::-webkit-scrollbar-track {
+  background-color: rgb(0 0 0 / 5%);
+}
+
+::-webkit-scrollbar-thumb {
+  // background: rgba(0, 0, 0, 0.6);
+  background-color: rgb(144 147 153 / 30%);
+  // background-color: rgba(144, 147, 153, 0.3);
+  border-radius: 2px;
+  box-shadow: inset 0 0 6px rgb(0 0 0 / 20%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: @border-color-dark;
+}
+
+// =================================
+// ==============nprogress==========
+// =================================
+#nprogress {
+  pointer-events: none;
+
+  .bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 2px;
+    background-color: @primary-color;
+    opacity: 0.75;
+  }
+}
+
+//弹窗样式调整
+.common-modal-wrap {
+  .scroll-container {
+    padding: 0 !important;
+  }
+
+  .scrollbar__wrap {
+    margin-bottom: 0 !important;
+  }
+
+  .vben-basic-table-form-container {
+    .ant-form {
+      margin-bottom: 0;
+      padding-top: 0;
+    }
+  }
+}
+
+.form-slot {
+  padding-top: 5px;
+}
+
+.no-require {
+  border-color: #d9d9d9 !important;
+  box-shadow: none !important;
+}
